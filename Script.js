@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
             let link = thumbnail.getAttribute('data-link');
 
             // Update the hero section with the extracted data
-            document.getElementById('hero-image').src = image;
+          
             document.getElementById('hero-description').textContent = description;
             document.getElementById('hero-cta').href = link;
         });
-    });    
+    });
 });

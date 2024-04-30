@@ -50,8 +50,12 @@ ul, li{
     align-self: stretch;
     }
 
+.flex-wraper-item ul li a:hover {
+    color: #20c997; /* Sets the text color to #20c997 on hover */
+}
+
     .currentLink {
-       color: #20c997 !important;
+       color: #20c997 !important; /* Sets the text color to #20c997 when active, Removed for now */
     }
 
 
@@ -141,16 +145,18 @@ ul, li{
     -ms-flex-item-align: auto;
     align-self: center;
     }
+    
 .flex-wraper-item:nth-child(3) img{
     max-width: 25px;
     padding-left: 10px;
     }
-    .flex-container {
+
+.flex-container {
     display: flex;
 }
 
-
 .project-list {
+    padding-top: 30px; /* Adjust the value as needed */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
