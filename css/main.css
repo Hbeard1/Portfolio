@@ -145,7 +145,7 @@ ul, li{
     -ms-flex-item-align: auto;
     align-self: center;
     }
-    
+
 .flex-wraper-item:nth-child(3) img{
     max-width: 25px;
     padding-left: 10px;
@@ -339,4 +339,95 @@ li.certification img {
     width: 60px; /* You can adjust this width as necessary */
     height: 60px; /* This ensures a square image */
     margin-right: 20px; /* Space between image and text */
+}
+/* Base styles */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive typography */
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Navigation styles for mobile */
+.nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+.nav li {
+  text-align: center;
+  padding: 5px;
+}
+
+/* Responsive flex container */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .flex-container {
+    flex-direction: row;
+  }
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* This keeps space between the projects */
+    align-items: flex-start; /* Aligns items to the start of the flex line */
+    padding-top: 30px; /* Keeps the top padding */
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.project-thumbnail {
+    width: 20%; /* Adjust width to fit exactly 4 items per row */
+    margin: 1%; /* Reduces margin to make them closer */
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .project-thumbnail {
+        width: 30%; /* Fits three items per row on smaller desktops */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-thumbnail {
+        width: 48%; /* Two items per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-thumbnail {
+        width: 100%; /* One item per row on mobile devices */
+    }
+}
+
+/* Responsive footer */
+footer {
+  padding: 20px;
+  text-align: center;
 }
